@@ -44,9 +44,10 @@ Al finalizar retorna la lista creada.
 List* crea_lista() {
    List* L = create_list();
    int elemento = 1;
-   while(elemento <= 10)
+   while(elemento <= 10){
       pushBack(L, &elemento);
       elemento++;
+   }
    return L;
 }
 
