@@ -2,3 +2,17 @@ Thu Mar 12 07:15:15 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 affb726
+Thu Mar 19 07:23:17 PM UTC 2026: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:4: error: this ‘while’ clause does not guard... [-Werror=misleading-indentation]
+   47 |    while(elemento <= 10)
+      |    ^~~~~
+exercises.c:49:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘while’
+   49 |       elemento++;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+6b5dcb7
