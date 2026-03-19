@@ -53,3 +53,17 @@ Thu Mar 19 07:35:12 PM UTC 2026:
  tests:  1|4
 total_score: 20/70
 399ce3e
+Thu Mar 19 07:46:42 PM UTC 2026: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:62:4: error: expected ‘,’ or ‘;’ before ‘while’
+   62 |    while(elemento != NULL){
+      |    ^~~~~
+exercises.c:60:9: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   60 |    int* elemento = first(L);
+      |         ^~~~~~~~
+cc1: all warnings being treated as errors
+38ff223
