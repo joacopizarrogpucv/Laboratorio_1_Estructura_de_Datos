@@ -77,3 +77,9 @@ exercises.c:63:12: error: invalid operands to binary * (have ‘int’ and ‘in
    63 |       suma *= elemento;
       |            ^~
 a85bc3a
+Thu Mar 19 07:47:26 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 20/70
+2120c70
