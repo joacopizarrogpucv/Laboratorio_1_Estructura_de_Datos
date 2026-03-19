@@ -128,3 +128,19 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
       |                         ~~~~~~^~~~
 cc1: all warnings being treated as errors
 f3c7dde
+Thu Mar 19 07:55:57 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:22: error: ‘n’ undeclared (first use in this function); did you mean ‘yn’?
+  100 |       push(auxiliar, n);
+      |                      ^
+      |                      yn
+exercises.c:100:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:99:13: error: unused variable ‘elemento’ [-Werror=unused-variable]
+   99 |       void* elemento = top(P1);
+      |             ^~~~~~~~
+cc1: all warnings being treated as errors
+7161b5f
