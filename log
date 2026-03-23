@@ -346,3 +346,16 @@ exercises.c:132:10: error: expected expression before ‘}’ token
   132 |          }
       |          ^
 7d902ef
+Mon Mar 23 01:41:45 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:30: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |             if (top(pila) == *(char)cadena[i])
+      |                              ^~~~~~~~~~~~~~~~
+exercises.c:132:10: error: expected expression before ‘}’ token
+  132 |          }
+      |          ^
+2d69a27
