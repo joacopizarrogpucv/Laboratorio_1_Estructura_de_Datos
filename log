@@ -295,3 +295,32 @@ exercises.c:132:10: error: expected expression before ‘}’ token
       |          ^
 cc1: all warnings being treated as errors
 2be7259
+Mon Mar 23 01:27:50 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:124:29: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘!=’ token
+  124 |    for(int i = 0, cadena[i] != '\0' ; i++){
+      |                             ^~
+exercises.c:124:42: error: expected ‘;’ before ‘)’ token
+  124 |    for(int i = 0, cadena[i] != '\0' ; i++){
+      |                                          ^
+      |                                          ;
+exercises.c:126:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  126 |          push(pila, cadena[i]);
+      |                     ~~~~~~^~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:131:30: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |             if (top(pila) == *(char)cadena[i])
+      |                              ^~~~~~~~~~~~~~~~
+exercises.c:132:10: error: expected expression before ‘}’ token
+  132 |          }
+      |          ^
+f53ee1e
