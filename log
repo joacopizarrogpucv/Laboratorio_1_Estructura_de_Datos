@@ -189,3 +189,40 @@ exercises.c:132:10: error: expected expression before ‘}’ token
       |          ^
 cc1: all warnings being treated as errors
 06f3079
+Mon Mar 23 01:21:49 AM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:124:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘!=’ token
+  124 |    for(int i, cadena[i] != '\0' ; i++){
+      |                         ^~
+exercises.c:124:38: error: expected ‘;’ before ‘)’ token
+  124 |    for(int i, cadena[i] != '\0' ; i++){
+      |                                      ^
+      |                                      ;
+exercises.c:126:27: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Wint-conversion]
+  126 |          push(pila, cadena[i]);
+      |                     ~~~~~~^~~
+      |                           |
+      |                           char
+In file included from exercises.c:7:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+exercises.c:128:11: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  128 |       if(*(char*)cadena[i] == ')' || *(char*)cadena[i] == ']' || *(char*)cadena[i] == '}'){
+      |           ^
+exercises.c:128:39: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  128 |       if(*(char*)cadena[i] == ')' || *(char*)cadena[i] == ']' || *(char*)cadena[i] == '}'){
+      |                                       ^
+exercises.c:128:67: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  128 |       if(*(char*)cadena[i] == ')' || *(char*)cadena[i] == ']' || *(char*)cadena[i] == '}'){
+      |                                                                   ^
+exercises.c:131:27: error: comparison between pointer and integer [-Werror]
+  131 |             if (top(pila) == cadena[i])
+      |                           ^~
+exercises.c:132:10: error: expected expression before ‘}’ token
+  132 |          }
+      |          ^
+cc1: all warnings being treated as errors
+2d4a773
