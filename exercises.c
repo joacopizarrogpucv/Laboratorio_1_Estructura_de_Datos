@@ -45,7 +45,9 @@ List* crea_lista() {
    List* L = create_list();
    int elemento = 1;
    while(elemento <= 10){
-      pushBack(L, &elemento);
+      int* numero = malloc(sizeof(int));
+      *numero = elemento;
+      pushBack(L, &numero);
       elemento++;
    }
    return L;
